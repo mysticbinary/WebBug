@@ -48,7 +48,7 @@ public class SubmitMessagesServlet extends HttpServlet {
                                 + "抱歉，留言失败！ 2秒后跳转填写留言板！"
                 );
                 //等待2秒 跳转登录页
-                response.setHeader("refresh", "2;url=/jsp/messages/writermessage.jsp");
+                response.setHeader("refresh", "2;url=/WEB-INF/jsp/messages/writermessages.jsp");
             }
         }
     }

@@ -30,7 +30,8 @@ public class WriterMessagesServlet extends HttpServlet {
             //等待2秒 跳转登录页
             response.setHeader("refresh", "2;url=/jsp/join/login.jsp");
         } else {
-            response.sendRedirect("/jsp/messages/writermessages.jsp");
+//            response.sendRedirect("/jsp/messages/writermessages.jsp");
+            request.getRequestDispatcher("/WEB-INF/jsp/messages/writermessages.jsp").forward(request, response);
         }
     }
 

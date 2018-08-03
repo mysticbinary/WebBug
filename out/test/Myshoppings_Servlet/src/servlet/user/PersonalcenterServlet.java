@@ -45,7 +45,7 @@ public class PersonalcenterServlet extends HttpServlet {
             UserCombination usercombination = tool.mergeTwoUser(currentuser_data,imagepath);
 
             session.setAttribute("currentuser_data", usercombination);
-            request.getRequestDispatcher("/jsp/user/personal_center.jsp").forward(request, response);
+            request.getRequestDispatcher("/WEB-INF/jsp/user/personal_center.jsp").forward(request, response);
         }
     }
 

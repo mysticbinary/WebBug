@@ -27,15 +27,19 @@
 <body>
 
 <ol>
+    <li><a href="/jsp/join/errorsessionlogin.jsp" target="MyRight">登录(seeion-302)</a></li>
     <li><a href="/PersonalcenterServlet" target="MyRight">个人中心</a></li>
     <li><a href="/UserManageServlet" target="MyRight">用户管理(后台功能)1</a></li>
     <li><a href="/UserManageServlet2" target="MyRight">用户管理(后台功能)2</a></li>
     <li><a href="/InQueryServlet" target="MyRight">查询用户1</a></li>
     <li><a href="/InQueryServlet2" target="MyRight">查询用户2</a></li>
-    <li><a href="/WriterMessagesServlet" target="MyRight">写留言</a></li>
+    <li><a href="/WriterMessagesServlet" target="MyRight">写留言1</a></li>
+    <li><a href="/TokenWriterMessagesServlet" target="MyRight">写留言2</a></li>
     <li><a href="/ShowMessagesServlet" target="MyRight">留言展示1</a></li>
     <li><a href="/ShowMessagesServlet2" target="MyRight">留言展示2</a></li>
     <li><a href="/jsp/upload/uploadimage.jsp" target="MyRight">文件上传(到目录)</a></li>
+    <li><a href="/sql/mysql.txt" target="MyRight">Insecure DOR</a></li>
+    <li><a href="/testpath" target="MyRight">Insecure Properties</a></li>
     <li><a href="/index_right.jsp" target="MyRight">关于该网站</a></li>
 </ol>
 

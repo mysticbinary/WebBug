@@ -7,6 +7,16 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+    <!--默认的配置是给开发者用来调试 看错误参数的，但是项目上线就不需要默认配置了,(不安全)-->
+    <!--<error-page>-->
+        <!--<error-code>404</error-code>-->
+        <!--<location>/404.jsp</location>-->
+    <!--</error-page>-->
+    <!--<error-page>-->
+        <!--<exception-type>java.lang.Exception</exception-type>-->
+        <!--<location>/error.jsp</location>-->
+    <!--</error-page>-->
+
     <servlet>
         <servlet-name>IndexServlet</servlet-name>
         <servlet-class>servlet.login.IndexServlet</servlet-class>
@@ -247,6 +257,35 @@
     <servlet-mapping>
         <servlet-name>MySQLCodecLoginServlet</servlet-name>
         <url-pattern>/MySQLCodecLoginServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ErrorSessionLoginServlet</servlet-name>
+        <servlet-class>servlet.login.ErrorSessionLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorSessionLoginServlet</servlet-name>
+        <url-pattern>/ErrorSessionLoginServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Submit_Messages_tokenServlet</servlet-name>
+        <servlet-class>servlet.messages.Submit_Messages_tokenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Submit_Messages_tokenServlet</servlet-name>
+        <url-pattern>/Submit_Messages_tokenServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TokenWriterMessagesServlet</servlet-name>
+        <servlet-class>servlet.messages.TokenWriterMessagesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TokenWriterMessagesServlet</servlet-name>
+        <url-pattern>/TokenWriterMessagesServlet</url-pattern>
     </servlet-mapping>
 
 </web-app>

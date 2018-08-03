@@ -27,7 +27,7 @@ public class ToQueryServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("usercombination", queryUersall); //展示的用户数据
         request.setAttribute("querystr", querystr); //展示的用户数据  request.setAttribute()
-        request.getRequestDispatcher("/jsp/user/showqueryuser.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/jsp/user/showqueryuser.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

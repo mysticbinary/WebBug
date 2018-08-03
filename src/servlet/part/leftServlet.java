@@ -52,7 +52,7 @@ public class leftServlet extends HttpServlet {
         UserCombination current_user = tool.mergeTwoUser(currentuser_data,imagepath);
         session.setAttribute("current_user", current_user);
 
-        request.getRequestDispatcher("/jsp/user/user_manage.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/jsp/user/user_manage.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

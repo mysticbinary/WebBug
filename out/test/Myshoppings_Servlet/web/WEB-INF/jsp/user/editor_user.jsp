@@ -71,7 +71,6 @@
             <td><input name="username" value=<%=user.getUsername()%> type="text"/></td>
         </tr>
 
-
         <tr>
             <td>mobilephone:</td>
             <td><input name="mobilephone" value=<%=user.getMobilephone()%> type="text"/></td>

@@ -88,11 +88,10 @@ public class UploadImageServlet extends HttpServlet {
         randomFile.close();
         tempFile.delete();
 
-        request.setAttribute("result", "上传成功！");
+        request.setAttribute("result", "上传成功！path:" + realPath);
         // 注意上传到的是 tomcat 目录，不是编码目录。
         //D:\Green\JavaProject\Myshoppings_Servlet\out\artifacts\Myshoppings_Servlet_war_exploded\image
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/upload/uploadimage.jsp");
-        dispatcher.forward(request, response);
+        request.getRequestDispatcher("/jsp/upload/uploadimage.jsp").forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

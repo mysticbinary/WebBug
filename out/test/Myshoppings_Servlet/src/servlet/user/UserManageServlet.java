@@ -81,9 +81,9 @@ public class UserManageServlet extends HttpServlet {
                 System.out.println("current usrmanage path:"+servletPath); // /UserManageServlet
 
                 if(servletPath.equals("/UserManageServlet")){
-                    request.getRequestDispatcher("/jsp/user/user_manage.jsp").forward(request, response);
+                    request.getRequestDispatcher("/WEB-INF/jsp/user/user_manage.jsp").forward(request, response);
                 }else if(servletPath.equals("/UserManageServlet2")){
-                    request.getRequestDispatcher("/jsp/user/user_manage2.jsp").forward(request, response);
+                    request.getRequestDispatcher("/WEB-INF/jsp/user/user_manage2.jsp").forward(request, response);
                 }
 
             }

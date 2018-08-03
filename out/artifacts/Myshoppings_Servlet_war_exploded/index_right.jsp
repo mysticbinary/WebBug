@@ -12,15 +12,11 @@
 </head>
 <body>
 
-<h2>欢迎使用WebBug.</h2>
+<h2>欢迎使用WebBug</h2>
 <br/>
 
-<h3>技术选型:</h3>
-HTML+CSS+JavaScript+JSP
-<br/>
-Java+Servlet
-<br/>
-Mysql+Fastjson
+详细介绍请查阅 /README.md
+
 
 
 

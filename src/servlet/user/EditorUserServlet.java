@@ -49,6 +49,6 @@ public class EditorUserServlet extends HttpServlet {
 
         //获取数据库中 该登录的用户数据 ，并放到Session中
         session.setAttribute("uersinform", usercombination);
-        request.getRequestDispatcher("/jsp/user/editor_user.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/jsp/user/editor_user.jsp").forward(request, response);
     }
 }

@@ -30,7 +30,8 @@ public class InQueryServlet extends HttpServlet {
             //等待2秒 跳转登录页
             response.setHeader("refresh", "2;url=/jsp/join/login.jsp");
         } else {
-            response.sendRedirect("/jsp/user/queryuser.jsp");
+//            response.sendRedirect("/WEB-INF/jsp/user/queryuser.jsp");
+            request.getRequestDispatcher("/WEB-INF/jsp/user/queryuser.jsp").forward(request, response);
         }
     }
 
