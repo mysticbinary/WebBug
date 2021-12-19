@@ -1,0 +1,26 @@
+version : '2'
+
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-db
+    environment:
+      MYSQL_DATABASE: myshoppings
+      MYSQL_ROOT_USER: root
+      MYSQL_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    command: --init-file /data/application/init.sql
+    volumes:
+      - ./init.sql:/data/application/init.sql
+    restart: always
+    ports:
+      - "3306:3306"
+  webbug:
+    image: mysticbinary163/webbug
+    container_name: webbug
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"

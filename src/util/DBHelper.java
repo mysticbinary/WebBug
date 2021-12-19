@@ -6,8 +6,9 @@ import java.sql.DriverManager;
 public class DBHelper {
 
     public static Connection conn;
+    //private static String url = "jdbc:mysql://localhost:3306/myshoppings?useUnicode=true&characterEncoding=UTF-8";
+    private static String url = "jdbc:mysql://mysql-db:3306/myshoppings?useUnicode=true&characterEncoding=UTF-8";
     private static String user = "root";
-    private static String url = "jdbc:mysql://localhost:3306/myshoppings?useUnicode=true&characterEncoding=UTF-8";
     private static String password = "root";
 
     // get connnection

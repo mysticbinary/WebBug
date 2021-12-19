@@ -13,13 +13,9 @@
 <body>
 
 <h2>欢迎使用WebBug</h2>
+
 <br/>
-
-详细介绍请查阅 /README.md
-
-
-
-
+详细介绍请查阅 https://github.com/mysticbinary/WebBug/README.md
 
 </body>
 </html>

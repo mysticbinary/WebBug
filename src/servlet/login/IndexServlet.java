@@ -23,7 +23,7 @@ public class IndexServlet extends HttpServlet {
         User user = (User) session.getAttribute("user"); //获得session 会话中的 user
         if (user == null) {
             resp.getWriter().print(
-                    "<img src='/image/lie_logo.png' width='30' height='30'/><b>" + GlobalVariables.title + "</b>"
+                    "<img src='/image/bitbug_favicon.ico' width='30' height='30'/><b>" + GlobalVariables.title + "</b>"
                             + "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"
                             + " 您还没登录，请 <a href='/jsp/join/login.jsp' target='MyRight'>登录1</a>"
                             + " &nbsp <a href='/jsp/join/MySQLCodeclogin.jsp' target='MyRight'>登录2</a>"

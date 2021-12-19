@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>index</title>
+    <title>404</title>
 </head>
 <body>
-don't make sense!
+The is 404!
 </body>
 </html>
